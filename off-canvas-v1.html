@@ -86,9 +86,14 @@
       const menubar = document.querySelector("span");
 
       function openNav() {
-        document.getElementById("mySidenav").style.width = "45%";
-        document.getElementById("main").style.marginLeft = "45%";
         menubar.classList.toggle("disappear");
+        if (screen.width > 600) {
+          document.getElementById("mySidenav").style.width = "18%";
+          document.getElementById("main").style.marginLeft = "18%";
+        } else {
+          document.getElementById("mySidenav").style.width = "42%";
+          document.getElementById("main").style.marginLeft = "42%";
+        }
       }
 
       function closeNav() {
@@ -97,7 +102,7 @@
 
         menubar.getAttribute("class") === "disappear"
           ? menubar.removeAttribute("class")
-          : console.log("No");
+          : menubar.setAttribute("class", "disappear");
       }
     </script>
   </body>
