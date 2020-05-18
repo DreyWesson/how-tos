@@ -107,7 +107,6 @@
 
       function typewriter() {
         if (i<text.length) {
-          // console.log(document.querySelector('.typewriter'))
           document.querySelector('h3').innerHTML += text.charAt(i);
           i++;
           setTimeout(typewriter, speed);
@@ -118,12 +117,11 @@
 
       menuIcon.addEventListener("click", () => {
         menuIcon.classList.toggle("change");
-        console.log(offCanvas)
         offCanvas.classList.toggle("open")
+        let css =offCanvas.style.display
 
-        if (offCanvas.style.display === "block")
-          offCanvas.style.display = "none";
-        else offCanvas.style.display = "block";
+        if (css === "block") css= "none";
+        else css = "block";
       });
 
 
