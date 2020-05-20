@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        transform: translate(0, 0);
+        transition: transform 1000ms;
+        padding: 30px;
+        width: 30px;
+        background-color: #333;
+      }
+
+      .box.move {
+        transform: translate(500px, 500px);
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <script>
+      const box = document.querySelector(".box");
+
+      box.addEventListener("click", (e) => box.classList.add("move"));
+
+      box.addEventListener("transitionend", (e) => {
+        box.style.backgroundColor = "teal";
+        box.classList.remove("move");
+        setTimeout(() => (box.style.backgroundColor = "#333"), 1000);
+      });
+    </script>
+  </body>
+</html>
