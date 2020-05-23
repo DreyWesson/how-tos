@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .navbar a {
+        /* float: left; */
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 25px;
+      }
+
+      .navbar a:hover {
+        background: #f1f1f1;
+        color: black;
+      }
+
+      .navbar a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      .main {
+        padding: 16px;
+        margin-bottom: 30px;
+      }
+      span {
+        position: absolute;
+        left: -999px;
+      }
+      @media screen and (min-width: 500px) {
+        span {
+          position: relative;
+          left: 0;
+        }
+        .navbar a {
+          /* float: left; */
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#home"><i class="fa fa-fw fa-home"></i> <span> Home</span></a>
+      <a href="#services"
+        ><i class="fa fa-fw fa-wrench"></i><span> Services</span></a
+      >
+      <a href="#clients"
+        ><i class="fa fa-fw fa-user"></i><span> Clients</span></a
+      >
+      <a href="#contact"
+        ><i class="fa fa-fw fa-envelope"></i><span> Contact</span></a
+      >
+    </div>
+
+    <div class="main">
+      <h1>Bottom Navigation Bar</h1>
+      <p>Some text some text some text.</p>
+    </div>
+  </body>
+</html>
