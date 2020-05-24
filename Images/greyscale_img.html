@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .container h1 {
+        text-align: center;
+      }
+      div.div-container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      div {
+        display: inline-block;
+      }
+      .bottom-left {
+        position: absolute;
+        bottom: 15px;
+        left: 16px;
+        padding: 7px;
+        border: 2px solid #333;
+        background-color: #333;
+        font-size: 1.2rem;
+        border-radius: 5px;
+      }
+      img {
+        margin: 7px;
+      }
+      img.grayscale {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+      img.blur {
+        filter: blur(5px);
+      }
+      img.brightness {
+        filter: brightness(200%);
+      }
+      img.contrast {
+        filter: contrast(200%);
+      }
+      img.drop-shadow {
+        filter: drop-shadow(8px 8px 10px gray);
+      }
+      img.hue-rotate {
+        filter: hue-rotate(90deg);
+      }
+      img.invert {
+        filter: invert(100%);
+      }
+      img.opacity {
+        filter: opacity(30%);
+      }
+      img.saturate {
+        filter: saturate(8);
+      }
+      img.sepia {
+        filter: sepia(100%);
+      }
+      img.contrast-brightness {
+        filter: contrast(200%) brightness(150%);
+      }
+      @media screen and (min-width: 950px) {
+        body {
+          max-width: 1000px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Convert the image to grayscale:</h1>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="original"
+        />
+        <div class="bottom-left">original</div>
+      </div>
+
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="grayscale"
+        />
+        <div class="bottom-left">grayscale</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="blur"
+        />
+        <div class="bottom-left">blur</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="brightness"
+        />
+        <div class="bottom-left">brightness</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="contrast"
+        />
+        <div class="bottom-left">contrast</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="drop-shadow"
+        />
+        <div class="bottom-left">drop-shadow</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="hue-rotate"
+        />
+        <div class="bottom-left">hue-rotate</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="invert"
+        />
+        <div class="bottom-left">invert</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="opacity"
+        />
+        <div class="bottom-left">opacity</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="saturate"
+        />
+        <div class="bottom-left">saturate</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="sepia"
+        />
+        <div class="bottom-left">sepia</div>
+      </div>
+      <div class="div-container">
+        <img
+          src="https://source.unsplash.com/random"
+          alt="Pineapple"
+          width="300"
+          height="300"
+          class="contrast-brightness"
+        />
+        <div class="bottom-left">contrast-brightness</div>
+      </div>
+    </div>
+
+    <div>
+      <strong>Note:</strong> The filter property is not supported in Internet
+      Explorer, Edge 12, or Safari 5.1 and earlier.
+    </div>
+  </body>
+</html>
